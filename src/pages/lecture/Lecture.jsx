@@ -3,7 +3,7 @@ import "./lecture.css";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { server } from "../../main";
-import Loading from "../../components/loading/Loading";
+import Loading from "../../components/Loading/Loading";
 import toast from "react-hot-toast";
 import { TiTick } from "react-icons/ti";
 
