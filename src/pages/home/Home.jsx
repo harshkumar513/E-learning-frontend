@@ -5,8 +5,7 @@ import Testimonials from '../../components/testimonials/Testimonials';
 import { UserData } from '../../context/UserContext';
 
 const Home = () => {
-    const{isAuth, user}= UserData()
-    console.log("isAuth value: home ", isAuth)
+   const navigate = useNavigate();
   return (
     <div>
       <div className='home'>

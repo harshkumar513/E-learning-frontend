@@ -21,12 +21,9 @@ export const UserContextProvider = ({ children }) => {
       });
 
       toast.success(data.message);
-
       localStorage.setItem("token", data.token);
-
       setUser(data.user);
       setIsAuth(true);
-
       navigate("/");
 
       if (fetchMyCourse) {
