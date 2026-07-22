@@ -31,6 +31,8 @@ const Lecture = ({ user }) => {
           token: localStorage.getItem("token"),
         },
       });
+      console.log("sumit");
+      console.log(data);
       setLectures(data.lectures);
       setLoading(false);
     } catch (error) {
@@ -186,7 +188,7 @@ const Lecture = ({ user }) => {
                   {lecture.video ? (
                     <>
                       <video
-                        src={`${server}/${lecture.video}`}
+                        src={lecture.video}
                         width={"100%"}
                         controls
                         controlsList="nodownload noremoteplayback"
