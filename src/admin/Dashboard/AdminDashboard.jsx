@@ -19,7 +19,7 @@ const AdminDashbord = ({ user }) => {
           token: localStorage.getItem("token"),
         },
       });
-      console.log(data);
+      // console.log(data);
 
       setStats(data.stats);
     } catch (error) {

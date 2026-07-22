@@ -52,7 +52,7 @@ const AdminUsers = ({ user }) => {
     }
   };
 
-  console.log(users);
+  // console.log(users);
   return (
     <Layout>
       <div className="users">

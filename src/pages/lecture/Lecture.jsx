@@ -31,8 +31,8 @@ const Lecture = ({ user }) => {
           token: localStorage.getItem("token"),
         },
       });
-      console.log("sumit");
-      console.log(data);
+      
+      // console.log(data);
       setLectures(data.lectures);
       setLoading(false);
     } catch (error) {
@@ -156,14 +156,14 @@ const Lecture = ({ user }) => {
           },
         }
       );
-      console.log(data.message);
+      // console.log(data.message);
       fetchProgress();
     } catch (error) {
       console.log(error);
     }
   };
 
-  console.log(progress);
+  // console.log(progress);
 
   useEffect(() => {
     fetchLectures();
