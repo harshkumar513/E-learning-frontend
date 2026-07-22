@@ -70,7 +70,7 @@ const AdminUsers = ({ user }) => {
 
           {users &&
             users.map((e, i) => (
-              <tbody>
+              <tbody key={i}>
                 <tr>
                   <td>{i + 1}</td>
                   <td>{e.name}</td>

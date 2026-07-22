@@ -260,10 +260,9 @@ const Lecture = ({ user }) => {
 
               {lectures && lectures.length > 0 ? (
                 lectures.map((e, i) => (
-                  <>
+                  <React.Fragment key={i}>
                     <div
                       onClick={() => fetchLecture(e._id)}
-                      key={i}
                       className={`lecture-number ${
                         lecture._id === e._id && "active"
                       }`}
@@ -292,7 +291,7 @@ const Lecture = ({ user }) => {
                         Delete {e.title}
                       </button>
                     )}
-                  </>
+                  </React.Fragment>
                 ))
               ) : (
                 <p>No Lectures Yet!</p>
